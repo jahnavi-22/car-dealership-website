@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== SWIPER CSS ===============-->
+
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+
+        <link rel="stylesheet" href="assets/css/searchCars.css">
+
+        <title>SpotLight</title>
+    </head>
+    <body>
+        <!--==================== Loader ====================-->
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    
+                    <button id="name1">
+                        <span>SpotLight</span>
+                      </button>
+                    
+                </a>
+
+                <div class="nav__menu" id = "nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="testdrive.html" class="nav__link">Test Drive</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#popular" class="nav__link">Popular</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="customize.html" class="nav__link">Customize</a>
+                        </li>
+
+                     
+                        <li>
+                            <div class = "volume"  onclick="unmute()"><i class="ri-volume-up-line"></i>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+
+
+                <div id="video-background">
+                    <video autoplay muted loop id="video1">
+                      <source src="assets/videos/sf90.mp4" type="video/mp4">
+                    </video>
+                    <div id="overlay-video"></div>
+                    <!-- Your content goes here -->
+                  </div>
+
+
+
+
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+
+                        
+                        <h1 class="home__title">
+                            POPULAR CARS ALL AROUND
+                        </h1>
+
+                        <h2 class="home__subtitle">
+                            BEYOND IMAGINATION
+                        </h2>
+                        
+                    </div>
+
+
+                    <section class="logos section">
+                        <div class="logos__container container grid">
+                            <div class="logos__content">
+                                <img src="assets/img/logo1.png" alt="" class="logos__img">
+                            </div>
+                            <div class="logos__content">
+                                <img src="assets/img/logo2.png" alt="" class="logos__img">
+                            </div>
+                            <div class="logos__content">
+                                <img src="assets/img/logo3.png" alt="" class="logos__img">
+                            </div>
+                            <div class="logos__content">
+                                <img src="assets/img/logo4.png" alt="" class="logos__img">
+                            </div>
+                            <div class="logos__content">
+                                <img src="assets/img/logo5.png" alt="" class="logos__img">
+                            </div>
+                            <div class="logos__content">
+                                <img src="assets/img/logo6.png" alt="" class="logos__img">
+                            </div>
+                        </div>
+                    </section>
+
+                    
+
+                  <!-- <a href="#about" class="home__button"" onclick="audio.play()">START</a> -->
+                    
+                  
+                </div>
+                <div class="scroll-down2"></div>
+                    <div class="scroll-down"></div>
+            </section>
+
+
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section" id="featured">
+                <h2 class="section__title">
+                    Featured Luxury Cars
+                </h2>
+
+
+                <div class="featured__container container">
+                    <ul class="featured__filters">
+                        <li>
+                            <button class="featured__item" data-filter="all">
+                                <span>All</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured__item" data-filter=".tesla">
+                                <img src="assets/img/logo3.png" alt ="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured__item" data-filter=".audi">
+                                <img src="assets/img/logo2.png" alt ="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured__item" data-filter=".porsche">
+                                <img src="assets/img/logo1.png" alt ="">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="featured__content grid">
+                        <article class="featured__card mix tesla">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Tesla</h1>
+
+                            <h3 class="featured__subtitle">Model X</h3>
+
+                            <img src="assets/img/featured1.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">$98,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+        
+                        </article>
+
+                        <article class="featured__card mix tesla">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Tesla</h1>
+
+                            <h3 class="featured__subtitle">Model 3</h3>
+
+                            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">$45,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+        
+                        </article>
+
+
+                        <article class="featured__card mix audi">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Audi</h1>
+
+                            <h3 class="featured__subtitle">E-tron</h3>
+
+                            <img src="assets/img/featured3.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">$175,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+        
+                        </article>
+
+
+                        <article class="featured__card mix porsche">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Porsche</h1>
+
+                            <h3 class="featured__subtitle">Boxster 987</h3>
+
+                            <img src="assets/img/featured4.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">$126,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+        
+                        </article>
+
+
+                        <article class="featured__card mix porsche">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Porsche</h1>
+
+                            <h3 class="featured__subtitle">Panamera</h3>
+
+                            <img src="assets/img/featured5.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">$126,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+        
+                        </article>
+
+
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== OFFER ====================-->
+            <section class="offer section">
+                <div class="offer__container container grid">
+                    <img src="assets/img/offer-bg.png" alt="" class="offer__bg">
+
+                    <div class="offer__data">
+                        <h2 class="section__title offer__title">
+                           Search Cars From Top-Leading Car Manufacturers.
+                        </h2>
+                    <form id = "myForm">
+                        <div class="form-control carApi">
+                            <input type="value" required="">
+                            <label>
+                                <span style="transition-delay:0ms">En</span><span style="transition-delay:50ms">te</span><span style="transition-delay:100ms">r&nbsp</span><span style="transition-delay:150ms">Man</span><span style="transition-delay:200ms">ufa</span><span style="transition-delay:250ms">ctu</span><span style="transition-delay:300ms">re</span><span style="transition-delay:350ms">r</span>
+                            </label>
+                        </div>
+                        
+
+                        
+                        <button id="post-api">
+                            Search
+                        </button>
+                    
+                    </form>
+                    
+                    </div>
+
+                    <img src="assets/img/offer.png" alt="" class="offer__img">
+                    <div class="scroll-down2"></div>
+                    <div class="scroll-down"></div>
+                </div>
+            </section>
+
+            <!--==================== LOGOS ====================-->
+        
+            <section class="display section">
+                <div class="display__container container grid">
+                   <img src="assets/img/la-ferrari-4k-rear-lights-8l.jpg " alt="" class="offer__bg">
+                    
+                    <ul id="carList"></ul>
+                
+                </div>
+            </section>
+
+
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-steering-line"></i>SpotLight
+                    </a>
+
+                    <p class="footer__description">
+                        We offer the best electric cars of <br>
+the most recognized brands in <br>
+the world.
+
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="about.html" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Cars</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">History</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__content" id="footerid">
+                    <h3 class="footer__title">
+                        Information
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Request a quote</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Find a dealer</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Follow us
+                    </h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target = "_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target = "_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" target = "_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </ul>
+                   
+                </div>
+            </div>
+
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--========== SCROLL DOWN ==========-->
+
+        <a href="#footerid" class="scrolldown" id="scroll-down">
+            <i class="ri-arrow-down-line"></i>
+        </a>
+        
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP JS ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+
+
+
+        <!--=======Login Box========-->
+
+        <div class="login-box">
+            <button class="close-button" onclick="closeForm()">&times;</button>
+            <div class="card">
+                <div class="card2">
+                  <form class="form">
+
+                  <p id="heading">Login</p>
+
+                  <div class="field">
+                  <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" class="input-icon">
+                  <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"></path>
+                  </svg>
+                    <input type="text" class="input-field" placeholder="Username" autocomplete="off" required>
+                  </div>
+                  <div class="field">
+                  <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" class="input-icon">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+                  </svg>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                  </div>
+                  <div class="btn">
+                  <button class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                  <button class="button2">Sign Up</button>
+                  </div>
+                  <button class="button3">Forgot Password</button>
+              </form>
+                </div>
+                  </div>
+          </div>
+
+
+
+    <!--3d modal-->
+
+    <div class="content-container">
+        <center>
+         <button id = "button10" onclick="document.getElementById('modal-wrapper').style.display='block'">
+        <font style="font-weight:bold">3D</font>
+        View</button>
+    </center>
+    </div>
+
+
+    <div id="modal-wrapper" class="modal">
+        <div class="center1">
+            <span
+                onclick="document.getElementById('modal-wrapper').style.display='none'"
+                class="close">&times;</span>
+            <div class="rotation">
+
+            <img src="assets/img/360/2.png">
+            <img src="assets/img/360/3.png">
+            <img src="assets/img/360/4.png">
+            <img src="assets/img/360/5.png">
+            <img src="assets/img/360/6.png">
+            <img src="assets/img/360/7.png">
+            <img src="assets/img/360/8.png">
+            <img src="assets/img/360/9.png">
+            <img src="assets/img/360/10.png">
+            <img src="assets/img/360/11.png">
+            <img src="assets/img/360/12.png">
+            <img src="assets/img/360/13.png">
+            <img src="assets/img/360/14.png">
+            <img src="assets/img/360/15.png">
+            <img src="assets/img/360/16.png">
+            <img src="assets/img/360/17.png">
+            <img src="assets/img/360/18.png">
+            <img src="assets/img/360/19.png">
+            <img src="assets/img/360/20.png">
+            <img src="assets/img/360/21.png">
+            <img src="assets/img/360/22.png">
+            <img src="assets/img/360/23.png">
+            <img src="assets/img/360/24.png">
+            <img src="assets/img/360/25.png">
+            <img src="assets/img/360/26.png">
+            <img src="assets/img/360/27.png">
+            <img src="assets/img/360/28.png">
+            <img src="assets/img/360/29.png">
+            <img src="assets/img/360/30.png">
+            <img src="assets/img/360/31.png">
+            <img src="assets/img/360/32.png">
+            <img src="assets/img/360/33.png">
+            <img src="assets/img/360/34.png">
+            <img src="assets/img/360/35.png">
+            <img src="assets/img/360/36.png">
+            <img src="assets/img/360/37.png">
+            <img src="assets/img/360/38.png">
+            <img src="assets/img/360/39.png">
+            <img src="assets/img/360/40.png">
+            <img src="assets/img/360/41.png">
+            <img src="assets/img/360/42.png">
+            <img src="assets/img/360/43.png">
+            <img src="assets/img/360/44.png">
+            <img src="assets/img/360/45.png">
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="assets/js/360deg.js"></script>
+
+<script src="assets/js/apiJS.js"></script>
+
+
+<!-- <script>
+
+var loader = document.getElementById("preloader");
+     var video = document.getElementById("video-background");
+        window.addEventListener("load",function(){
+            setTimeout(function(){
+                loader.style.display = "none";
+            },6000);
+    })
+</script> -->
+
+    </body>
+</html>
